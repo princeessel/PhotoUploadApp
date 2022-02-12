@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PhotoUploadApp</string>
+    <string name="welcome_message">Welcome Message</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="user_greeting">Hi:</string>
+    <string name="user_name">Full Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="logout">Logout</string>
+</resources>

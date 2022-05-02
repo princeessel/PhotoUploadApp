@@ -25,7 +25,21 @@ object PrefManager {
     }
 
     fun clearUserId(context: Context) {
-        val sharedPref = context.getSharedPreferences("loggedInUserId", Context.MODE_PRIVATE) ?: return
+        val sharedPref =
+            context.getSharedPreferences("loggedInUserId", Context.MODE_PRIVATE) ?: return
         sharedPref.edit().clear().apply()  //sharedPref.edit().remove("USER_ID").apply()
+    }
+
+    fun savedCurrentPayment(context: Context, paymentId: Long) {
+        val sharedPref = context.getSharedPreferences("currentPaymentId", Context.MODE_PRIVATE)
+        with(sharedPref.edit()) {
+            putLong("PAYMENT_ID", paymentId)
+            apply()
+        }
+    }
+
+    fun retrieveCurrentPaymentId(context: Context): Long {
+        val sharedPref = context.getSharedPreferences("currentPaymentId", Context.MODE_PRIVATE)
+        return sharedPref.getLong("PAYMENT_ID", 0L)
     }
 }

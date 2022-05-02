@@ -5,13 +5,13 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-class User(
+data class User(
     var username: String? = "",
     @ColumnInfo(name = "email")
     var email: String? = "",
     var password: String? = "",
-    var fullName: String? = ""
-) {
+    var fullName: String? = "",
+    var loanAmount: Long?,
     @PrimaryKey(autoGenerate = true)
-    var id: Long = 0L
-}
+    var userId: Long = 0L,
+)

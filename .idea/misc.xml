@@ -3,11 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14492753623188406" />
+        <entry key="../../../../layout/custom_preview.xml" value="0.2546875" />
+        <entry key="app/src/main/res/drawable/border.xml" value="0.11614583333333334" />
+        <entry key="app/src/main/res/drawable/container_border.xml" value="0.20364583333333333" />
+        <entry key="app/src/main/res/drawable/pay_btn.xml" value="0.1296875" />
+        <entry key="app/src/main/res/drawable/submit_payment_btn.xml" value="0.15885416666666666" />
+        <entry key="app/src/main/res/drawable/submit_payment_btn_disabled.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/switch_background.xml" value="0.2537037037037037" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_edit_payment.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.11550151975683891" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.14492753623188406" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.11550151975683891" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.14492753623188406" />
+        <entry key="app/src/main/res/layout/fragment_user_activities.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/payment_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/user_activities_list.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -16,5 +28,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5" />
+      </ProjectState>
+    </option>
   </component>
 </project>

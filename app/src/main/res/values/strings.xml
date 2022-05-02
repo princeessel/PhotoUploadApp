@@ -1,10 +1,18 @@
 <resources>
-    <string name="app_name">PhotoUploadApp</string>
+    <string name="app_name">Sallie Mae Clone</string>
     <string name="welcome_message">Welcome Message</string>
     <string name="upload_photo">Upload Photo</string>
-    <string name="user_greeting">Hi:</string>
+    <string name="user_greeting">Good Evening,</string>
     <string name="user_name">Full Name</string>
     <string name="sign_up">Sign Up</string>
     <string name="login">Log In</string>
     <string name="logout">Logout</string>
+    <string name="payment_note">Payment submitted at or before 11:59pm PT will be effective for the day you schedule. However, payment may not be reflected in your online history for 2 to 4 days after the effective date</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_evening">Good Evening</string>
+    <string name="good_night">Good Night</string>
+    <string name="edit_payment">Edit Payment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

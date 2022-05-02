@@ -7,9 +7,11 @@ import androidx.lifecycle.viewModelScope
 import com.example.photouploadapp.model.repository.PhotoUploadRepository
 import com.example.photouploadapp.view.entities.User
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class LoginViewModel : ViewModel() {
-    private lateinit var repository: PhotoUploadRepository
+class LoginViewModel @Inject constructor(
+    private val repository: PhotoUploadRepository
+) : ViewModel() {
 
     private val _error = MutableLiveData<String>()
     val error: LiveData<String> = _error
@@ -18,21 +20,23 @@ class LoginViewModel : ViewModel() {
     val loginUser: LiveData<User> = _loginUser
 
 
-    fun init(repository: PhotoUploadRepository) {
-        this.repository = repository
-    }
-
     fun login(username: String, password: String) {
         viewModelScope.launch {
             val user = repository.getUser(username, password)
-            if (user == null) {
-                _error.value = "User not found"
+            loginUser(user, password)
+        }
+
+    }
+
+
+    private fun loginUser(user: User, password: String) {
+        if (user == null) {
+            _error.value = "User not found"
+        } else {
+            if (user.password == password) {
+                _loginUser.value = user
             } else {
-                if (user.password == password) {
-                    _loginUser.value = user
-                } else {
-                    _error.value = "Password is not valid"
-                }
+                _error.value = "Password is not valid"
             }
         }
 
